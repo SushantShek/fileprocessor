@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859b9863-c042-4073-a168-cc7ebee2566d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ReplaceString/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReplaceString/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/str/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/str/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/str/processor/ProcessFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/str/processor/ProcessFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/str/processor/ProcessFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/str/processor/impl/XMLFileProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/str/processor/impl/XMLFileProcessor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +48,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jaxp-example-master/jaxp-example-master/pom.xml" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="str.Main" />
+      <module name="fileprocessor" />
+      <option name="PROGRAM_PARAMETERS" value="xml as sss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="str.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -75,14 +104,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1575669349266" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575674058163">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575674058163" />
+    <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1575674024254">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1575674024254" />
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1575672150694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1575672150694" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1575670838501">
+    <state x="560" y="66" key="#xdebugger.evaluate" timestamp="1575674857646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575670838501" />
+    <state x="560" y="66" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1575674857646" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1575673275620">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575673275620" />
+    <state width="1286" height="203" key="GridCell.Tab.0.bottom" timestamp="1575674806131">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575674806131" />
+    <state width="1286" height="203" key="GridCell.Tab.0.center" timestamp="1575674806131">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575674806131" />
+    <state width="1286" height="203" key="GridCell.Tab.0.left" timestamp="1575674806130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575674806130" />
+    <state width="1286" height="203" key="GridCell.Tab.0.right" timestamp="1575674806131">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575674806131" />
+    <state width="1286" height="203" key="GridCell.Tab.1.bottom" timestamp="1575674807027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575674807027" />
+    <state width="1286" height="203" key="GridCell.Tab.1.center" timestamp="1575674807027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575674807027" />
+    <state width="1286" height="203" key="GridCell.Tab.1.left" timestamp="1575674807027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575674807027" />
+    <state width="1286" height="203" key="GridCell.Tab.1.right" timestamp="1575674807027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575674807027" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1575670841382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -91,5 +164,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="21" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575670111226" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

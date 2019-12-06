@@ -2,49 +2,40 @@ package str.processor.impl;
 
 import main.com.str.processor.ReplaceText;
 import org.apache.commons.io.FileUtils;
-
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+
 //import static com.ibm.jvm.format.TraceArgs.outputFile;
 
 public class XMLFileProcessor implements ReplaceText {
 //    private Object String;
 
-    public String processXMLFile(File[] listOfFiles, String old, String replace) throws IOException, ParserConfigurationException, XPathExpressionException, SAXException {
+    public String processXMLFile(File[] listOfFiles, String old, String replace) throws IOException, XPathExpressionException, SAXException {
         Charset charset = StandardCharsets.UTF_8;
-        for (int i = 0; i < listOfFiles.length; i++) {
-            File file = listOfFiles[i];
+        for (File file : listOfFiles) {
             if (file.isFile() && file.getName().endsWith(".xml")) {
                 String content = FileUtils.readFileToString(file, charset);
 
-                Document doc = DocumentBuilderFactory.newInstance()
-                        .newDocumentBuilder().parse(new InputSource(String.valueOf(file)));
+               /* Document doc = DocumentBuilderFactory.newInstance()
+                        .newDocumentBuilder().parse(new InputSource(String.valueOf(file)));*/
 
                 try {
-                    findValueAndReplace(content, "aa", "bb");
+                    findValueAndReplace(content, old, replace);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }

@@ -22,13 +22,18 @@ public class ProcessFile {
 
 //        final Resource resource = new ClassPathResource(path);
 //        Path path =Paths.
-        FilenameFilter filter = new FilenameFilter() {
-            public boolean accept(File dir, String name) {
-                return name.endsWith(".txt");
-            }
-        };
-        File folder = new File("/resources");
+        String path = getClass()
+                .getResource("/")
+                .toString();
+//        FilenameFilter filter = new FilenameFilter() {
+//            public boolean accept(File dir, String name) {
+//                return name.endsWith(".txt");
+//            }
+//        };
+        System.out.println("PAth = " + path);
+        File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
+        System.out.println("listOfFiles = " + listOfFiles.length);
         String isSuccess;
 
         try {
@@ -40,7 +45,7 @@ public class ProcessFile {
                 System.out.println("Invalid File Type");
                 throw new IllegalArgumentException("File type not supported");
             }
-        }catch (IOException | ParserConfigurationException |  XPathExpressionException | SAXException e) {
+        }catch (IOException | XPathExpressionException | SAXException e) {
             throw new RuntimeException(e);
         }
         return isSuccess;

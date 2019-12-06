@@ -1,6 +1,0 @@
-str\Main.class
-str\processor\impl\XMLFileProcessor.class
-main\com\str\processor\ReplaceText.class
-str\processor\ProcessFile.class
-str\processor\impl\TXTFileProcessor.class
-str\processor\ProcessFile$1.class
