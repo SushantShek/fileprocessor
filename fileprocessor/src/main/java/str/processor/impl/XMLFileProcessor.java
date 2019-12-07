@@ -35,7 +35,7 @@ public class XMLFileProcessor implements ReplaceText {
                         .newDocumentBuilder().parse(new InputSource(String.valueOf(file)));*/
 
                 try {
-                    findValueAndReplace(content, old, replace);
+                   findValueAndReplace(content, old, replace);
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
@@ -93,6 +93,7 @@ xformer.transform(new DOMSource(doc), new StreamResult(new File(outputFile))); *
             Node value = nodes.item(idx).getAttributes().getNamedItem("value");
             String val = value.getNodeValue();
             value.setNodeValue(val.replaceAll(oldText, newText));
+            System.out.println("Value :: " + value);
 
         }
     }

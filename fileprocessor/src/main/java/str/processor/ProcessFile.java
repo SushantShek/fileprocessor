@@ -4,35 +4,40 @@ import org.xml.sax.SAXException;
 import str.processor.impl.TXTFileProcessor;
 import str.processor.impl.XMLFileProcessor;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.nio.file.Path;
 
 public class ProcessFile {
 
    private XMLFileProcessor xmlProcessor = new XMLFileProcessor();
    private TXTFileProcessor txtProcessor = new TXTFileProcessor();
 
-    public String getInputFile(String fileType,String old,String replace){
+    public String getInputFile(String fileType,String old,String replace) {
 
 //        final Resource resource = new ClassPathResource(path);
-//        Path path =Paths.
-        String path = getClass()
-                .getResource("/")
-                .toString();
+//        Path path = Paths.get("\\resources");
+       /* String path = getClass()
+                .getResource("/resources")
+                .toString();*/
 //        FilenameFilter filter = new FilenameFilter() {
 //            public boolean accept(File dir, String name) {
 //                return name.endsWith(".txt");
 //            }
-//        };
-        System.out.println("PAth = " + path);
-        File folder = new File(path);
-        File[] listOfFiles = folder.listFiles();
+//        }
+
+ /*       try {
+            Files.newDirectoryStream(Paths.get("."),
+                    path -> path.toString().endsWith(".xml"))
+                    .forEach(System.out::println);
+            *//*Files.newDirectoryStream(Paths.get("."), path -> path.toFile().isFile())
+                    .forEach(System.out::println);*//*
+        }catch(Exception ex){
+        ex.printStackTrace();
+        }*/
+//        System.out.println("Path :: " + path);
+        File[] listOfFiles = finder(".\\resource",fileType);//folder.listFiles();
         System.out.println("listOfFiles = " + listOfFiles.length);
         String isSuccess;
 
@@ -40,7 +45,7 @@ public class ProcessFile {
             if (fileType.equalsIgnoreCase("xml")) {
                 isSuccess = xmlProcessor.processXMLFile(listOfFiles,old,replace);
             } else if (fileType.equalsIgnoreCase("txt")) {
-                isSuccess = txtProcessor.processTXTFile(listOfFiles);
+                isSuccess = txtProcessor.processTXTFile(listOfFiles,old,replace);
             } else {
                 System.out.println("Invalid File Type");
                 throw new IllegalArgumentException("File type not supported");
@@ -53,4 +58,13 @@ public class ProcessFile {
 
    /* public String getInputFile(String type, String search, String replace) {
     }*/
+
+    public File[] finder( String dirName,String fileType){
+        File dir = new File(dirName);
+        return dir.listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String filename)
+            { return filename.endsWith("."+fileType); }
+        } );
+
+    }
 }
