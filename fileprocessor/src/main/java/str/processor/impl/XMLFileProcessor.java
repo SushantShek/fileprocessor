@@ -40,7 +40,7 @@ public class XMLFileProcessor implements ReplaceText {
 
                 try {
                     JAXPFileProcessor processor = new JAXPFileProcessor(file.getPath());
-                   String output =  processor.modifyAttribute("level",old, replace);
+                   String output =  processor.modifyAttribute("*",old, replace);
 //                    output =  processor.modifyAttribute("name",old, replace);
 
                    System.out.println("============XML===============");

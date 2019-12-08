@@ -1,7 +1,9 @@
 package str.processor.impl;
 
+import com.sun.deploy.util.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -41,15 +43,25 @@ public class JAXPFileProcessor {
         String expr = String.format("//*[contains(@%s, '%s')]", attribute, oldValue);
         NodeList nodes = (NodeList) xpath.evaluate(expr, input, XPathConstants.NODESET);
         // 3- Make the change on the selected nodes
-//        for (int i = 0; i < nodes.getLength(); i++) {
-//            Element value = (Element) nodes.item(i);
-//            value.setAttribute(attribute, newValue);
-//        }
+        for (int i = 0; i < nodes.getLength(); i++) {
+            Element value = (Element) nodes.item(i);
+            System.out.println(" Value = " + value + "attr"+ value.getAttributes());
+            NamedNodeMap map = value.getAttributes();
+            for(int k=0; k<map.getLength(); k++) {
+                if (map.item(k).getNodeValue()!=null) {
+                    map.item(k).setNodeValue(map.item(k).getNodeValue().replace(oldValue,newValue));//setTextContent("error");
+                }
+            }
+//            for (int j = 0; j < value.getAttributes().getLength(); i++) {
+//                value.getNodeValue().replace(oldValue,newValue);
+//            }
+           // value.setAttribute(attribute, newValue);
+        }
         //Stream api syntax
-                IntStream
-                  .range(0, nodes.getLength())
-                  .mapToObj(i -> (Element) nodes.item(i))
-                  .forEach(value -> value.setAttribute(attribute, newValue));
+//                IntStream
+//                  .range(0, nodes.getLength())
+//                  .mapToObj(i -> (Element) nodes.item(i))
+//                  .forEach(value -> value.setAttribute(attribute, newValue));
         // 4- Save the result to a new XML doc
         TransformerFactory factory = TransformerFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
