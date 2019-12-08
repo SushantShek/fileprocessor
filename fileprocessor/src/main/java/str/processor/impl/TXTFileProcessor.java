@@ -12,28 +12,21 @@ public class TXTFileProcessor implements ReplaceText {
 
     Charset charset = StandardCharsets.UTF_8;
 
-    public String processTXTFile(File[] listOfFiles, String oldText, String newText) throws IOException {
+    public void processTXTFile(File[] listOfFiles, String oldText, String newText) throws IOException {
 
-        for (int i = 0; i < listOfFiles.length; i++) {
-            File file = listOfFiles[i];
+        for (File file : listOfFiles) {
             if (file.isFile() && file.getName().endsWith(".txt")) {
                 String content = FileUtils.readFileToString(file, charset);
                 findValueAndReplace(content, oldText, newText);
             }
         }
-        return null;
     }
 
     @Override
     public void findValueAndReplace(String content, String oldText, String newText) {
 
         content = content.replaceAll(oldText, newText);
-        try {
-            System.out.println("========= Output =========");
-            System.out.println(content);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        System.out.println("========= Output =========");
+        System.out.println(content);
     }
 }

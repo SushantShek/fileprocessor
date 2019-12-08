@@ -22,6 +22,6 @@ public class Main {
         }
         ProcessFile pf = new ProcessFile();
         System.out.println("type,search,replace"+type + search + replace);
-        String successStr = pf.getInputFile(type,search,replace);
+        pf.getInputFile(type,search,replace);
     }
 }

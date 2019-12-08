@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="859b9863-c042-4073-a168-cc7ebee2566d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,10 +115,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Vim_Emulation/0.0.1366.728@0.0.1366.728" timestamp="1575726264926" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575758738908">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575831001956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575758738908" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575831001956" />
     <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1575674024254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -135,42 +139,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575673275620" />
-    <state width="1286" height="139" key="GridCell.Tab.0.bottom" timestamp="1575805409865">
+    <state width="1286" height="219" key="GridCell.Tab.0.bottom" timestamp="1575831037255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.0.center" timestamp="1575805409865">
+    <state width="1286" height="219" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
+    <state width="1286" height="219" key="GridCell.Tab.0.center" timestamp="1575831037255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.0.left" timestamp="1575805409865">
+    <state width="1286" height="219" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
+    <state width="1286" height="219" key="GridCell.Tab.0.left" timestamp="1575831037254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.0.right" timestamp="1575805409865">
+    <state width="1286" height="219" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575831037254" />
+    <state width="1286" height="219" key="GridCell.Tab.0.right" timestamp="1575831037255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.1.bottom" timestamp="1575805409865">
+    <state width="1286" height="219" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
+    <state width="1286" height="226" key="GridCell.Tab.1.bottom" timestamp="1575806493178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.1.center" timestamp="1575805409865">
+    <state width="1286" height="226" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
+    <state width="1286" height="226" key="GridCell.Tab.1.center" timestamp="1575806493178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.1.left" timestamp="1575805409865">
+    <state width="1286" height="226" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
+    <state width="1286" height="226" key="GridCell.Tab.1.left" timestamp="1575806493177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
-    <state width="1286" height="139" key="GridCell.Tab.1.right" timestamp="1575805409865">
+    <state width="1286" height="226" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575806493177" />
+    <state width="1286" height="226" key="GridCell.Tab.1.right" timestamp="1575806493178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="139" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575805409865" />
+    <state width="1286" height="226" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1575670841382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575670841382" />
+    <state x="252" y="99" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575806485892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="252" y="99" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1575806485892" />
     <state x="380" y="0" width="606" height="728" key="find.popup" timestamp="1575724286709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -179,61 +187,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="21" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575770204245" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

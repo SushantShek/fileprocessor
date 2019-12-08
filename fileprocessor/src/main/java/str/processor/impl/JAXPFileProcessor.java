@@ -1,6 +1,5 @@
 package str.processor.impl;
 
-import com.sun.deploy.util.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
@@ -20,13 +19,11 @@ import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.util.stream.IntStream;
 
 public class JAXPFileProcessor {
     private final Document input;
 
     public JAXPFileProcessor(String resourcePath) throws SAXException, IOException, ParserConfigurationException {
-        // 1- Build the doc from the XML file
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
         factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
@@ -36,13 +33,12 @@ public class JAXPFileProcessor {
     }
 
     public String modifyAttribute(String attribute, String oldValue, String newValue) throws XPathExpressionException, TransformerFactoryConfigurationError, TransformerException {
-        // 2- Locate the node(s) with xpath
         XPath xpath = XPathFactory
                 .newInstance()
                 .newXPath();
         String expr = String.format("//*[contains(@%s, '%s')]", attribute, oldValue);
         NodeList nodes = (NodeList) xpath.evaluate(expr, input, XPathConstants.NODESET);
-        // 3- Make the change on the selected nodes
+
         for (int i = 0; i < nodes.getLength(); i++) {
             Element value = (Element) nodes.item(i);
             System.out.println(" Value = " + value + "attr"+ value.getAttributes());
@@ -52,17 +48,8 @@ public class JAXPFileProcessor {
                     map.item(k).setNodeValue(map.item(k).getNodeValue().replace(oldValue,newValue));//setTextContent("error");
                 }
             }
-//            for (int j = 0; j < value.getAttributes().getLength(); i++) {
-//                value.getNodeValue().replace(oldValue,newValue);
-//            }
-           // value.setAttribute(attribute, newValue);
         }
-        //Stream api syntax
-//                IntStream
-//                  .range(0, nodes.getLength())
-//                  .mapToObj(i -> (Element) nodes.item(i))
-//                  .forEach(value -> value.setAttribute(attribute, newValue));
-        // 4- Save the result to a new XML doc
+
         TransformerFactory factory = TransformerFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
         Transformer xformer = factory.newTransformer();
