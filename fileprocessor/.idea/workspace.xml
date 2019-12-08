@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="859b9863-c042-4073-a168-cc7ebee2566d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ReplaceText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ReplaceText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/attribute.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="str.Main" />
       <module name="fileprocessor" />
-      <option name="PROGRAM_PARAMETERS" value="txt customer client" />
+      <option name="PROGRAM_PARAMETERS" value="xml trace error" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="str.*" />
@@ -114,10 +113,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Vim_Emulation/0.0.1366.728@0.0.1366.728" timestamp="1575726264926" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575729707177">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575758738908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575729707177" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575758738908" />
     <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1575674024254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -126,46 +125,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1575672150694" />
-    <state x="560" y="66" key="#xdebugger.evaluate" timestamp="1575674857646">
+    <state x="802" y="200" width="245" height="496" key="#xdebugger.evaluate" timestamp="1575769672012">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="560" y="66" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1575674857646" />
+    <state x="802" y="200" width="245" height="496" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1575769672012" />
+    <state width="768" height="466" key="DebuggerActiveHint" timestamp="1575769855965">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="768" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1575769855965" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1575673275620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575673275620" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1575730284006">
+    <state width="1286" height="127" key="GridCell.Tab.0.bottom" timestamp="1575770452709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575730284006" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1575730284006">
+    <state width="1286" height="127" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575770452709" />
+    <state width="1286" height="127" key="GridCell.Tab.0.center" timestamp="1575770452709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575730284006" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1575730284005">
+    <state width="1286" height="127" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575770452709" />
+    <state width="1286" height="127" key="GridCell.Tab.0.left" timestamp="1575770452709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575730284005" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1575730284006">
+    <state width="1286" height="127" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575770452709" />
+    <state width="1286" height="127" key="GridCell.Tab.0.right" timestamp="1575770452709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575730284006" />
-    <state width="1286" height="203" key="GridCell.Tab.1.bottom" timestamp="1575730146006">
+    <state width="1286" height="127" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575770452709" />
+    <state width="1286" height="139" key="GridCell.Tab.1.bottom" timestamp="1575770388443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="203" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575730146006" />
-    <state width="1286" height="203" key="GridCell.Tab.1.center" timestamp="1575730146006">
+    <state width="1286" height="139" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575770388443" />
+    <state width="1286" height="139" key="GridCell.Tab.1.center" timestamp="1575770388442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="203" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575730146006" />
-    <state width="1286" height="203" key="GridCell.Tab.1.left" timestamp="1575730146006">
+    <state width="1286" height="139" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575770388442" />
+    <state width="1286" height="139" key="GridCell.Tab.1.left" timestamp="1575770388442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="203" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575730146006" />
-    <state width="1286" height="203" key="GridCell.Tab.1.right" timestamp="1575730146006">
+    <state width="1286" height="139" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575770388442" />
+    <state width="1286" height="139" key="GridCell.Tab.1.right" timestamp="1575770388442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575730146006" />
+    <state width="1286" height="139" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575770388442" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1575670841382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -174,33 +177,48 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="380" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1575724286709" />
-    <state x="339" y="21" width="672" height="676" key="search.everywhere.popup" timestamp="1575670111226">
+    <state x="339" y="21" width="672" height="676" key="search.everywhere.popup" timestamp="1575770204245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="21" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575670111226" />
+    <state x="339" y="21" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575770204245" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
-          <line>29</line>
+          <line>36</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

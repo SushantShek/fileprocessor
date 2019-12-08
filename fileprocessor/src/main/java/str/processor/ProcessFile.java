@@ -50,7 +50,7 @@ public class ProcessFile {
                 System.out.println("Invalid File Type");
                 throw new IllegalArgumentException("File type not supported");
             }
-        }catch (IOException | XPathExpressionException | SAXException e) {
+        }catch (IOException e) {
             throw new RuntimeException(e);
         }
         return isSuccess;
