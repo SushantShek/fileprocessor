@@ -6,9 +6,9 @@
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/JAXPFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/util/JAXPProcessingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/util/JAXPProcessingUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,14 +48,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="str.processor.impl" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\resource" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\src\main\resources\xml" />
@@ -64,7 +75,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="str.Main" />
       <module name="fileprocessor" />
-      <option name="PROGRAM_PARAMETERS" value="xml trace error" />
+      <option name="PROGRAM_PARAMETERS" value="txt customer client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="str.*" />
@@ -115,10 +126,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Vim_Emulation/0.0.1366.728@0.0.1366.728" timestamp="1575726264926" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575831001956">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575844233720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575831001956" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575844233720" />
     <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1575674024254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -127,54 +138,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1575672150694" />
+    <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1575847169805">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1575847169805" />
     <state x="802" y="200" width="245" height="496" key="#xdebugger.evaluate" timestamp="1575805346382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="802" y="200" width="245" height="496" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1575805346382" />
-    <state width="768" height="466" key="DebuggerActiveHint" timestamp="1575804747833">
+    <state width="768" height="466" key="DebuggerActiveHint" timestamp="1575833078303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="768" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1575804747833" />
+    <state width="768" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1575833078303" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1575673275620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575673275620" />
-    <state width="1286" height="219" key="GridCell.Tab.0.bottom" timestamp="1575831037255">
+    <state width="1286" height="141" key="GridCell.Tab.0.bottom" timestamp="1575847278697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="219" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
-    <state width="1286" height="219" key="GridCell.Tab.0.center" timestamp="1575831037255">
+    <state width="1286" height="141" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
+    <state width="1286" height="141" key="GridCell.Tab.0.center" timestamp="1575847278697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="219" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
-    <state width="1286" height="219" key="GridCell.Tab.0.left" timestamp="1575831037254">
+    <state width="1286" height="141" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
+    <state width="1286" height="141" key="GridCell.Tab.0.left" timestamp="1575847278697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="219" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575831037254" />
-    <state width="1286" height="219" key="GridCell.Tab.0.right" timestamp="1575831037255">
+    <state width="1286" height="141" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
+    <state width="1286" height="141" key="GridCell.Tab.0.right" timestamp="1575847278697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="219" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575831037255" />
-    <state width="1286" height="226" key="GridCell.Tab.1.bottom" timestamp="1575806493178">
+    <state width="1286" height="141" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
+    <state width="1286" height="145" key="GridCell.Tab.1.bottom" timestamp="1575833815500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="226" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
-    <state width="1286" height="226" key="GridCell.Tab.1.center" timestamp="1575806493178">
+    <state width="1286" height="145" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575833815500" />
+    <state width="1286" height="145" key="GridCell.Tab.1.center" timestamp="1575833815500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="226" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
-    <state width="1286" height="226" key="GridCell.Tab.1.left" timestamp="1575806493177">
+    <state width="1286" height="145" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1575833815500" />
+    <state width="1286" height="145" key="GridCell.Tab.1.left" timestamp="1575833815499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="226" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575806493177" />
-    <state width="1286" height="226" key="GridCell.Tab.1.right" timestamp="1575806493178">
+    <state width="1286" height="145" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1575833815499" />
+    <state width="1286" height="145" key="GridCell.Tab.1.right" timestamp="1575833815500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="226" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575806493178" />
+    <state width="1286" height="145" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1575833815500" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1575670841382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575670841382" />
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1575847457793">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1575847457793" />
     <state x="252" y="99" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575806485892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -21,7 +21,6 @@ public class Main {
             ex.getStackTrace();
         }
         ProcessFile pf = new ProcessFile();
-        System.out.println("type,search,replace"+type + search + replace);
         pf.getInputFile(type,search,replace);
     }
 }

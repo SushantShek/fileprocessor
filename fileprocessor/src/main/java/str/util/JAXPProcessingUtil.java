@@ -20,10 +20,10 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 
-public class JAXPFileProcessor {
+public class JAXPProcessingUtil {
     private final Document input;
 
-    public JAXPFileProcessor(String resourcePath) throws SAXException, IOException, ParserConfigurationException {
+    public JAXPProcessingUtil(String resourcePath) throws SAXException, IOException, ParserConfigurationException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
         factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
@@ -44,7 +44,7 @@ public class JAXPFileProcessor {
             NamedNodeMap map = value.getAttributes();
             for(int k=0; k<map.getLength(); k++) {
                 if (map.item(k).getNodeValue()!=null) {
-                    map.item(k).setNodeValue(map.item(k).getNodeValue().replace(oldValue,newValue));//setTextContent("error");
+                    map.item(k).setNodeValue(map.item(k).getNodeValue().replace(oldValue,newValue));
                 }
             }
         }
