@@ -1,4 +1,4 @@
-package str.processor.impl;
+package str.util;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -41,7 +41,6 @@ public class JAXPFileProcessor {
 
         for (int i = 0; i < nodes.getLength(); i++) {
             Element value = (Element) nodes.item(i);
-            System.out.println(" Value = " + value + "attr"+ value.getAttributes());
             NamedNodeMap map = value.getAttributes();
             for(int k=0; k<map.getLength(); k++) {
                 if (map.item(k).getNodeValue()!=null) {
