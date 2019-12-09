@@ -1,6 +1,5 @@
 package str.util;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.w3c.dom.Document;
@@ -20,7 +19,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.net.URISyntaxException;
 
 import static org.xmlunit.assertj.XmlAssert.assertThat;
 
@@ -32,6 +30,7 @@ class JAXPProcessingUtilTest {
     void setUp() {
         File dir = new File(Constant.PATH);
         File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
+        assert files != null;
         filePath = files[0].getPath();
     }
 
@@ -48,7 +47,7 @@ class JAXPProcessingUtilTest {
     }
 
     @Test
-    void givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected() throws ParserConfigurationException, SAXException, IOException, URISyntaxException, XPathExpressionException, TransformerException {
+    void givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected() throws ParserConfigurationException, SAXException, IOException, XPathExpressionException, TransformerException {
 
         JAXPProcessingUtil transformer = new JAXPProcessingUtil(filePath);
         String attribute = "*";
@@ -56,6 +55,7 @@ class JAXPProcessingUtilTest {
         String newValue = "error";
         File folder = new File("src/test/resources/xml/");
         File[] file = folder.listFiles();
+        assert file != null;
         Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file[0]);
         TransformerFactory factory = TransformerFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);

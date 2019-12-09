@@ -22,10 +22,6 @@ class TXTFileProcessorTest {
         transform = new TXTFileProcessor();
     }
 
-    @AfterEach
-    void tearDown() {
-    }
-
     @Test
     void givenFileDir_findFileWithExtension_confirmItExist() {
         File dir = new File(Constant.PATH);

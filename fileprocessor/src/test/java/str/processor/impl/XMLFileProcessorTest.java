@@ -13,6 +13,7 @@ class XMLFileProcessorTest {
     void givenFileDir_findFileWithExtension_confirmItExist() {
         File dir = new File(Constant.PATH);
         File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
+        assert files != null;
         assertTrue(files.length > 0);
 
         assert (files[0].getName().contains("xml"));
@@ -24,6 +25,7 @@ class XMLFileProcessorTest {
         File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
 
         XMLFileProcessor xmlProcessor = new XMLFileProcessor();
+        assert files != null;
         String output = xmlProcessor.processXMLFile(files, "trace", "error");
 
         assert(output.contains("error"));

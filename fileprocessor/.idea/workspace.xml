@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="859b9863-c042-4073-a168-cc7ebee2566d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileprocessor.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/str/util/JAXPProcessingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/util/JAXPProcessingUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/str/processor/impl/TXTFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/processor/impl/TXTFileProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/str/processor/impl/XMLFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/processor/impl/XMLFileProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/str/util/JAXPProcessingUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/util/JAXPProcessingUtilTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +22,6 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -54,49 +48,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="str.util" />
       <recent name="str.processor.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\temp\processor\fileprocessor\fileprocessor\src\test\resources\xml" />
-      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\src\main\resources\xml" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\resource" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\src\main\resources\xml" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.JAXPProcessingUtilTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="str.Main" />
       <module name="fileprocessor" />
-      <option name="PROGRAM_PARAMETERS" value="txt customer client" />
+      <option name="PROGRAM_PARAMETERS" value="xml trace error" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="str.*" />
@@ -107,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JAXPProcessingUtilTest.givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JAXPProcessingUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileprocessor" />
       <extension name="coverage">
         <pattern>
@@ -117,29 +95,27 @@
       </extension>
       <option name="PACKAGE_NAME" value="str.util" />
       <option name="MAIN_CLASS_NAME" value="str.util.JAXPProcessingUtilTest" />
-      <option name="METHOD_NAME" value="givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JAXPProcessingUtilTest.givenXMLContainsAttribute_modifyAttribute_returnTransformedXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TXTFileProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileprocessor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="str.util.*" />
+          <option name="PATTERN" value="str.processor.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="str.util" />
-      <option name="MAIN_CLASS_NAME" value="str.util.JAXPProcessingUtilTest" />
-      <option name="METHOD_NAME" value="givenXMLContainsAttribute_modifyAttribute_returnTransformedXML" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="str.processor.impl" />
+      <option name="MAIN_CLASS_NAME" value="str.processor.impl.TXTFileProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLFileProcessorTest.givenFileDir_findFileWithExtension_confirmItExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XMLFileProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileprocessor" />
       <extension name="coverage">
         <pattern>
@@ -149,44 +125,37 @@
       </extension>
       <option name="PACKAGE_NAME" value="str.processor.impl" />
       <option name="MAIN_CLASS_NAME" value="str.processor.impl.XMLFileProcessorTest" />
-      <option name="METHOD_NAME" value="givenFileDir_findFileWithExtension_confirmItExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XMLFileProcessorTest.givenXmlFile_whenCallProcess_returnString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fileprocessor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="str.processor.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="str.processor.impl" />
-      <option name="MAIN_CLASS_NAME" value="str.processor.impl.XMLFileProcessorTest" />
-      <option name="METHOD_NAME" value="givenXmlFile_whenCallProcess_returnString" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.JAXPProcessingUtilTest.givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected" />
-      <item itemvalue="JUnit.JAXPProcessingUtilTest.givenXMLContainsAttribute_modifyAttribute_returnTransformedXML" />
-      <item itemvalue="JUnit.XMLFileProcessorTest.givenFileDir_findFileWithExtension_confirmItExist" />
-      <item itemvalue="JUnit.XMLFileProcessorTest.givenXmlFile_whenCallProcess_returnString" />
+      <item itemvalue="JUnit.TXTFileProcessorTest" />
+      <item itemvalue="JUnit.XMLFileProcessorTest" />
+      <item itemvalue="JUnit.JAXPProcessingUtilTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JAXPProcessingUtilTest" />
+        <item itemvalue="JUnit.XMLFileProcessorTest" />
+        <item itemvalue="JUnit.TXTFileProcessorTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.XMLFileProcessorTest.givenXmlFile_whenCallProcess_returnString" />
-        <item itemvalue="JUnit.XMLFileProcessorTest.givenFileDir_findFileWithExtension_confirmItExist" />
-        <item itemvalue="JUnit.JAXPProcessingUtilTest.givenTwoXMLFiles_modifyAttribute_compareOutputIsSameAsExpected" />
-        <item itemvalue="JUnit.JAXPProcessingUtilTest.givenXMLContainsAttribute_modifyAttribute_returnTransformedXML" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -198,23 +167,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575669288704</updated>
-      <workItem from="1575893226623" duration="14023000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Project_Structure" timestamp="1575676349497">
@@ -225,10 +179,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Vim_Emulation/0.0.1366.728@0.0.1366.728" timestamp="1575726264926" />
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575844233720">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575927447510">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575844233720" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575927447510" />
     <state x="463" y="68" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1575674024254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -253,22 +207,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1575673275620" />
-    <state width="1286" height="141" key="GridCell.Tab.0.bottom" timestamp="1575847278697">
+    <state width="1286" height="128" key="GridCell.Tab.0.bottom" timestamp="1575927607731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="141" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
-    <state width="1286" height="141" key="GridCell.Tab.0.center" timestamp="1575847278697">
+    <state width="1286" height="128" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575927607731" />
+    <state width="1286" height="128" key="GridCell.Tab.0.center" timestamp="1575927607731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="141" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
-    <state width="1286" height="141" key="GridCell.Tab.0.left" timestamp="1575847278697">
+    <state width="1286" height="128" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575927607731" />
+    <state width="1286" height="128" key="GridCell.Tab.0.left" timestamp="1575927607731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="141" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
-    <state width="1286" height="141" key="GridCell.Tab.0.right" timestamp="1575847278697">
+    <state width="1286" height="128" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575927607731" />
+    <state width="1286" height="128" key="GridCell.Tab.0.right" timestamp="1575927607731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="141" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575847278697" />
+    <state width="1286" height="128" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575927607731" />
     <state width="1286" height="145" key="GridCell.Tab.1.bottom" timestamp="1575833815500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -289,6 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1575670841382" />
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575925679425">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1575925679425" />
     <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1575847457793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
