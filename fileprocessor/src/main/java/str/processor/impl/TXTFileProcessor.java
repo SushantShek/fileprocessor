@@ -5,12 +5,14 @@ import str.util.Constant;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 /**
  * Process Text files and replace string
  */
 public class TXTFileProcessor {
 
+    private static final Logger LOG = Logger.getLogger(TXTFileProcessor.class.getName());
     public String processTXTFile(File[] listOfFiles, String oldText, String newText) throws IOException {
         String output = "";
         for (File file : listOfFiles) {
@@ -32,7 +34,7 @@ public class TXTFileProcessor {
      */
     private String findValueAndReplace(String content, String oldText, String newText) {
         content = content.replaceAll(oldText, newText);
-        System.out.println("========= Output =========");
+        LOG.info("========= Output =========");
         System.out.println(content);
         return content;
     }

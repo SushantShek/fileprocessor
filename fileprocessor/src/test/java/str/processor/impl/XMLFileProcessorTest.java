@@ -1,18 +1,32 @@
 package str.processor.impl;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import str.util.Constant;
+
+import java.io.File;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class XMLFileProcessorTest {
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
+    @Test
+    void givenFileDir_findFileWithExtension_confirmItExist() {
+        File dir = new File(Constant.PATH);
+        File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
+        assertTrue(files.length > 0);
+
+        assert (files[0].getName().contains("xml"));
     }
 
-    @org.junit.jupiter.api.AfterEach
-    void tearDown() {
-    }
+    @Test
+    void givenXmlFile_whenCallProcess_returnString() {
+        File dir = new File(Constant.PATH);
+        File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
 
-    @org.junit.jupiter.api.Test
-    void processXMLFile() {
+        XMLFileProcessor xmlProcessor = new XMLFileProcessor();
+        String output = xmlProcessor.processXMLFile(files, "trace", "error");
+
+        assert(output.contains("error"));
+
     }
 }

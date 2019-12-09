@@ -20,9 +20,20 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 
+/**
+ * JAXP Processor is used to parse XML
+ * And Later do the String processing to replace String within Attribute
+ */
 public class JAXPProcessingUtil {
     private final Document input;
 
+    /**
+     * Constructor to initalize Jaxp Processor
+     * @param resourcePath of the XML File
+     * @throws SAXException for DOm Parser
+     * @throws IOException for read files
+     * @throws ParserConfigurationException For config
+     */
     public JAXPProcessingUtil(String resourcePath) throws SAXException, IOException, ParserConfigurationException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
@@ -32,6 +43,17 @@ public class JAXPProcessingUtil {
                 .parse(resourcePath);
     }
 
+    /**
+     * This method actually replace the Text in XML file
+     * with the alternate text
+     * @param attribute Xpath Att
+     * @param oldValue To be replaced
+     * @param newValue replaced with
+     * @return String
+     * @throws XPathExpressionException Regular Expression to find attribute
+     * @throws TransformerFactoryConfigurationError Config
+     * @throws TransformerException Processor exception
+     */
     public String modifyAttribute(String attribute, String oldValue, String newValue) throws XPathExpressionException, TransformerFactoryConfigurationError, TransformerException {
         XPath xpath = XPathFactory
                 .newInstance()

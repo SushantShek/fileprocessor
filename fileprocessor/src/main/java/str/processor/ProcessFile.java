@@ -6,9 +6,11 @@ import str.util.Constant;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class ProcessFile {
 
+    private final static Logger LOG = Logger.getLogger(ProcessFile.class.getName());
     private XMLFileProcessor xmlProcessor = new XMLFileProcessor();
     private TXTFileProcessor txtProcessor = new TXTFileProcessor();
 
@@ -21,6 +23,8 @@ public class ProcessFile {
      */
     public void getInputFile(String fileType, String old, String replace) {
 
+
+
         File[] listOfFiles = finder(fileType);
         try {
             if (fileType.equalsIgnoreCase(Constant.XML_FILE)) {
@@ -28,7 +32,7 @@ public class ProcessFile {
             } else if (fileType.equalsIgnoreCase(Constant.TEXT_FILE)) {
                 txtProcessor.processTXTFile(listOfFiles, old, replace);
             } else {
-                System.out.println("Invalid File Type");
+                LOG.info("Invalid File Type");
                 throw new IllegalArgumentException("File type not supported");
             }
         } catch (IOException e) {

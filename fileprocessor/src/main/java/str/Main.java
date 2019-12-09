@@ -2,22 +2,25 @@ package str;
 
 import str.processor.ProcessFile;
 
+import java.util.logging.Logger;
+
 public class Main {
 
-    public static String type="";
-    public static String search="";
-    public static String replace="";
+    private final static Logger LOG = Logger.getLogger(Main.class.getName());
+    private static String type="";
+    private static String search="";
+    private static String replace="";
 
     public static void main(String[] args) {
         if(args.length <2){
-            System.out.println("Missing mandatory input parameters");
+            LOG.info("Missing mandatory input parameters");
         }
         try{
             type=args[0];
             search=args[1];
             replace=args[2];
         }catch (Exception ex){
-            System.out.println("Invalid input parameters");
+            LOG.info("Invalid input parameters");
             ex.getStackTrace();
         }
         ProcessFile pf = new ProcessFile();
