@@ -1,6 +1,7 @@
 package str.processor.impl;
 
 import org.xml.sax.SAXException;
+import str.processor.service.ProcessTransformation;
 import str.util.Constant;
 import str.util.JAXPProcessingUtil;
 
@@ -15,17 +16,28 @@ import java.util.logging.Logger;
 /**
  * Process XML files and replace strings
  */
-public class XMLFileProcessor {
+public class XMLFileProcessor implements ProcessTransformation {
 
     private static final Logger LOG = Logger.getLogger(XMLFileProcessor.class.getName());
 
-    public String processXMLFile(File[] listOfFiles, String old, String replace) {
+    private File[] listOfFile;
+    private String oldValue;
+    private String newValue;
+
+    public XMLFileProcessor(File[] listOfFiles, String old, String replace) {
+        this.listOfFile = listOfFiles;
+        this.oldValue = old;
+        this.newValue = replace;
+    }
+
+    @Override
+    public String processText() {
         String output = "";
-        for (File file : listOfFiles) {
+        for (File file : listOfFile) {
             if (file.isFile() && file.getName().endsWith("." + Constant.XML_FILE)) {
                 try {
                     JAXPProcessingUtil processor = new JAXPProcessingUtil(file.getPath());
-                    output = processor.modifyAttribute("*", old, replace);
+                    output = processor.modifyAttribute("*", oldValue, newValue);
                     output = output.replaceAll("(?m)^[ \t]*\r?\n", "");
                     LOG.info("============XML===============");
                     System.out.println(output);

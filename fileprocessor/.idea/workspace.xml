@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/str/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/ProcessFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/service/ProcessFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/TXTFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/str/processor/impl/XMLFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/str/processor/impl/TXTFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/processor/impl/TXTFileProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/str/processor/impl/XMLFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/processor/impl/XMLFileProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/str/util/JAXPProcessingUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/str/util/JAXPProcessingUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,7 +54,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -60,17 +63,30 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="str.processor.impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\resource" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\temp\processor\fileprocessor\fileprocessor\src\main\resources" />
+      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\src\main\resources\xml" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\src\main\resources\xml" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shekhar.sushant\IdeaProjects\fileprocessor\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JAXPProcessingUtilTest">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="str.Main" />
       <module name="fileprocessor" />
@@ -115,6 +131,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TXTFileProcessorTest.givenThatFileExist_ProcessTextFile_confirmIfTransfromedStringIsSameAsExpected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fileprocessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="str.processor.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="str.processor.impl" />
+      <option name="MAIN_CLASS_NAME" value="str.processor.impl.TXTFileProcessorTest" />
+      <option name="METHOD_NAME" value="givenThatFileExist_ProcessTextFile_confirmIfTransfromedStringIsSameAsExpected" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XMLFileProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileprocessor" />
       <extension name="coverage">
@@ -135,27 +167,17 @@
       <item itemvalue="JUnit.TXTFileProcessorTest" />
       <item itemvalue="JUnit.XMLFileProcessorTest" />
       <item itemvalue="JUnit.JAXPProcessingUtilTest" />
+      <item itemvalue="JUnit.TXTFileProcessorTest.givenThatFileExist_ProcessTextFile_confirmIfTransfromedStringIsSameAsExpected" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TXTFileProcessorTest.givenThatFileExist_ProcessTextFile_confirmIfTransfromedStringIsSameAsExpected" />
+        <item itemvalue="JUnit.TXTFileProcessorTest" />
         <item itemvalue="JUnit.JAXPProcessingUtilTest" />
         <item itemvalue="JUnit.XMLFileProcessorTest" />
-        <item itemvalue="JUnit.TXTFileProcessorTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

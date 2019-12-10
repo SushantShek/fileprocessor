@@ -1,6 +1,6 @@
 package str;
 
-import str.processor.ProcessFile;
+import str.processor.service.ProcessFile;
 
 import java.util.logging.Logger;
 

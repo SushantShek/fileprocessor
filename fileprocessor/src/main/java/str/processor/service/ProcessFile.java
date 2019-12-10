@@ -1,4 +1,4 @@
-package str.processor;
+package str.processor.service;
 
 import str.processor.impl.TXTFileProcessor;
 import str.processor.impl.XMLFileProcessor;
@@ -9,10 +9,7 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 public class ProcessFile {
-
-    private final static Logger LOG = Logger.getLogger(ProcessFile.class.getName());
-    private XMLFileProcessor xmlProcessor = new XMLFileProcessor();
-    private TXTFileProcessor txtProcessor = new TXTFileProcessor();
+    private static final Logger LOG = Logger.getLogger(ProcessFile.class.getName());
 
     /**
      * Takes in parameters
@@ -23,14 +20,14 @@ public class ProcessFile {
      */
     public void getInputFile(String fileType, String old, String replace) {
 
-
-
         File[] listOfFiles = finder(fileType);
         try {
             if (fileType.equalsIgnoreCase(Constant.XML_FILE)) {
-                xmlProcessor.processXMLFile(listOfFiles, old, replace);
+                XMLFileProcessor xmlProcessor = new XMLFileProcessor(listOfFiles, old, replace);
+                xmlProcessor.processText();
             } else if (fileType.equalsIgnoreCase(Constant.TEXT_FILE)) {
-                txtProcessor.processTXTFile(listOfFiles, old, replace);
+                TXTFileProcessor txtProcessor = new TXTFileProcessor(listOfFiles, old, replace);
+                txtProcessor.processText();
             } else {
                 LOG.info("Invalid File Type");
                 throw new IllegalArgumentException("File type not supported");

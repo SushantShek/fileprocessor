@@ -5,6 +5,7 @@ import str.util.Constant;
 
 import java.io.File;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class XMLFileProcessorTest {
@@ -24,11 +25,11 @@ class XMLFileProcessorTest {
         File dir = new File(Constant.PATH);
         File[] files = dir.listFiles((dir1, filename) -> filename.endsWith("." + "xml"));
 
-        XMLFileProcessor xmlProcessor = new XMLFileProcessor();
+        XMLFileProcessor xmlProcessor = new XMLFileProcessor(files, "trace", "error");
         assert files != null;
-        String output = xmlProcessor.processXMLFile(files, "trace", "error");
-
-        assert(output.contains("error"));
+        String output = xmlProcessor.processText();
+        assertNotNull(output);
+        assert (output.contains("error"));
 
     }
 }

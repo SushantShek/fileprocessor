@@ -1,6 +1,7 @@
 package str.processor.impl;
 
 import org.apache.commons.io.FileUtils;
+import str.processor.service.ProcessTransformation;
 import str.util.Constant;
 
 import java.io.File;
@@ -10,15 +11,26 @@ import java.util.logging.Logger;
 /**
  * Process Text files and replace string
  */
-public class TXTFileProcessor {
-
+public class TXTFileProcessor implements ProcessTransformation {
     private static final Logger LOG = Logger.getLogger(TXTFileProcessor.class.getName());
-    public String processTXTFile(File[] listOfFiles, String oldText, String newText) throws IOException {
+
+    private File[] listOfFile;
+    private String oldValue;
+    private String newValue;
+
+    public TXTFileProcessor(File[] listOfFiles, String oldText, String replace) {
+        this.listOfFile = listOfFiles;
+        this.oldValue = oldText;
+        this.newValue = replace;
+    }
+
+    @Override
+    public String processText() throws IOException {
         String output = "";
-        for (File file : listOfFiles) {
+        for (File file : listOfFile) {
             if (file.isFile() && file.getName().endsWith("." + Constant.TEXT_FILE)) {
                 String content = FileUtils.readFileToString(file, Constant.charset);
-                output = findValueAndReplace(content, oldText, newText);
+                output = findValueAndReplace(content, oldValue, newValue);
             }
         }
         return output;
