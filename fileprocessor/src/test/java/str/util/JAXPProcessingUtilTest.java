@@ -65,7 +65,7 @@ class JAXPProcessingUtilTest {
         xformer.transform(new DOMSource(doc), new StreamResult(output));
         String expectedXml = output.toString();
 
-        String result = transformer.modifyAttribute(attribute, oldValue, newValue).replaceAll("(?m)^[ \t]*\r?\n", "");
+        String result = transformer.modifyAttribute(attribute, oldValue, newValue);
 
         assertThat(result)
                 .and(expectedXml)

@@ -9,5 +9,8 @@
         <module name="fileprocessor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fileprocessor" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
